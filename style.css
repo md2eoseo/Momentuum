@@ -1,0 +1,9 @@
+input {
+  display: none;
+}
+.greeting {
+  display: none;
+}
+.showing {
+  display: block;
+}
