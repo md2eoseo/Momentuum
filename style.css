@@ -1,6 +1,7 @@
-input {
-  display: none;
+body {
+  color: white;
 }
+
 .greeting {
   display: none;
 }
