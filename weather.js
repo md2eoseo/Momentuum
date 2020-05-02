@@ -7,13 +7,13 @@ function getWeather(lat, lon) {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
   )
-    .then(function(response) {
+    .then(function (response) {
       return response.json();
     })
-    .then(function(json) {
+    .then(function (json) {
       const temp = json.main.temp;
       const place = json.name;
-      weather.innerText = `${temp}, ${place}`;
+      weather.innerText = `${Math.round(temp)}℃ in ${place}`;
     });
 }
 
@@ -26,7 +26,7 @@ function handleGeoSuccess(position) {
   const longitude = position.coords.longitude;
   const coordsObj = {
     latitude,
-    longitude
+    longitude,
   };
   saveCoords(coordsObj);
   getWeather(latitude, longitude);
