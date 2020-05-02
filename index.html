@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentuum</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/all.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="js-clock">
+    <div class="js-clock clock">
       <h1>00:00</h1>
     </div>
     <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
+      Welcome!&nbsp;<input type="text" placeholder="Your name?" />
     </form>
     <div class="js-greeting greeting"></div>
 
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
+    <ul class="js-toDoList toDoList"></ul>
+
+    <form class="js-toDoForm toDoForm">
+      <input type="text" placeholder="What am I missing?" />
     </form>
 
-    <ul class="js-toDoList"></ul>
+    <span class="js-weather weather"></span>
 
-    <span class="js-weather"></span>
+    <img class="bgImage" src="" alt="" />
 
     <script src="clock.js"></script>
     <script src="greetings.js"></script>
