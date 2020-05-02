@@ -76,11 +76,34 @@ body {
   line-height: 1.8;
 }
 
+.contact {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 2.2rem;
+}
+
+.contact i {
+  margin: 0 12px;
+  opacity: 0.8;
+  transition: 0.3s linear;
+}
+
+.contact i:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 .weather {
   position: absolute;
   right: 2rem;
   top: 1rem;
   font-size: 1.8rem;
+  transition: 0.3s linear;
+}
+
+.weather:hover {
+  transform: scale(1.2);
 }
 
 .bgImage {
@@ -90,6 +113,8 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
   animation: fadeIn 0.5s linear;
 }
 
@@ -103,5 +128,53 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@media all and (max-width: 320px) {
+  .clock {
+    margin-top: 10vh;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .greeting {
+    margin-top: 1vh;
+    font-size: 1.8rem;
+  }
+  .toDoList {
+    margin-top: 0.5vh;
+    font-size: 1.2rem;
+  }
+  .toDoForm {
+    margin-top: 1.5vh;
+  }
+  .toDoForm input {
+    font-size: 1.2rem;
+  }
+  .weather {
+    right: 1rem;
+    top: 0.5rem;
+    font-size: 1.4rem;
+  }
+  .contact {
+    left: 0.5rem;
+    top: 0.6rem;
+    font-size: 1.6rem;
+  }
+  .contact i {
+    margin: 0 6px;
+  }
+  .form {
+    margin-top: 1vh;
+    font-size: 1.8rem;
+  }
+  .form input {
+    font-size: 1.2rem;
+    border-radius: 25px;
   }
 }

@@ -5,10 +5,10 @@ const IMG_NUMBER = 5;
 let currentNumber;
 
 function paintImage(imgNumber) {
-  const image = new Image();
-  image.src = `images/${imgNumber + 1}.jpg`;
-  image.classList.add("bgImage");
-  body.appendChild(image);
+  const div = document.createElement("div");
+  div.style.backgroundImage = `url('images/${imgNumber + 1}.jpg')`;
+  div.classList.add("bgImage");
+  body.appendChild(div);
 }
 
 function genRandom() {
